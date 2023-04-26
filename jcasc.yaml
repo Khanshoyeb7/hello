@@ -6,7 +6,7 @@ jobs:
       pipelineJob('testjobs/default-agent') {
         definition {
           cps {
-            script("""\
+            script(
               pipeline {
                 agent any
                 stages {
@@ -16,7 +16,7 @@ jobs:
                     }
                   }
                 }
-              }""".stripIndent())
+              }
           }
         }
       }
