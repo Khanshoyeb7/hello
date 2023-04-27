@@ -1,11 +1,4 @@
-jenkins:
-  systemMessage: "Simple seed job example"
-jobs:
-  - script: |
-      multibranchPipelineJob('configuration-as-code') {
-          branchSources {
-              git {
-                  remote('https://github.com/khanshoyeb7/hello.git')
-              }
-          }
-      }
+  welcome-message: |
+        jenkins:
+          systemMessage: Successfully Deployed Using Terraform By Shoyeb.
+
