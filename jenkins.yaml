@@ -1,15 +1,13 @@
 jobs:
   - script: >
-      folder('testjobs')
-  - script: >
-      pipelineJob('testjobs/default-agent') {
+      pipelineJob('demo') {
         definition {
           cps {
             script("""\
               pipeline {
                 agent any
                 stages {
-                  stage ('test') {
+                  stage ('Hello') {
                     steps {
                       echo "hello Shoyeb"
                     }
