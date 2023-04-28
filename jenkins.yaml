@@ -1,5 +1,3 @@
-jenkins:
-  numExecutors: 2
 jobs:
   - script: >
       pipelineJob('demo') {
